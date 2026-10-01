@@ -1,0 +1,13 @@
+{
+  "name": "kerja-dulu",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "db:migrate:local": "npm run db:migrate:local --workspace=backend",
+    "db:migrate:remote": "npm run db:migrate:remote --workspace=backend"
+  }
+}

@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js & Build outputs (no leading slash for monorepo support)
+.next/
+out/
+build/
+dist/
+coverage/
+
+# Cloudflare Workers & Miniflare local storage
+.wrangler/
+.dev.vars*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Environment files
+.env
+.env*.local
+.env.production
+.env.development
+.env.test
+!.env.example
+
+# Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/
+
+# Vercel & Deployment
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
